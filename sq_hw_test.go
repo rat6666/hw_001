@@ -37,8 +37,8 @@ func Test_solutionTriangle(t *testing.T) {
 	}{
 		{In: 0, Expected: 0},
 		{In: 1, Expected: 0.433013},
-		{In: 4.4, Expected: 1.905256},
-		{In: 15.67, Expected: 6.785309},
+		{In: 4.4, Expected: 8.383126},
+		{In: 15.67, Expected: 106.325793},
 	}
 	for _, q := range data {
 		got := CalcSquare(q.In, SidesTriangle)
@@ -55,9 +55,9 @@ func Test_solutionCircle(t *testing.T) {
 		Expected float64
 	}{
 		{In: 0, Expected: 0},
-		{In: 1, Expected: 1.570796},
-		{In: 4.4, Expected: 30.410617},
-		{In: 15.67, Expected: 385.707310},
+		{In: 1, Expected: 3.141593},
+		{In: 4.4, Expected: 60.821234},
+		{In: 15.67, Expected: 771.414620},
 	}
 	for _, q := range data {
 		got := CalcSquare(q.In, SidesCircle)
